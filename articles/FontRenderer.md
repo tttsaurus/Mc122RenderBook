@@ -13,7 +13,7 @@ public static void onRenderGameOverlay(RenderGameOverlayEvent event)
 ***
 
 ```java
-private static final FloatBuffer floatBuffer = ByteBuffer.allocateDirect(16 << 2).order(ByteOrder.nativeOrder()).asFloatBuffer();
+FloatBuffer floatBuffer = ByteBuffer.allocateDirect(16 << 2).order(ByteOrder.nativeOrder()).asFloatBuffer();
 
 GL11.glGetFloat(GL11.GL_CURRENT_COLOR, floatBuffer);
 r = floatBuffer.get(0);
