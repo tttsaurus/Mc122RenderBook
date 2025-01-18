@@ -2,5 +2,8 @@ A collection of rendering examples and experiments in Minecraft 1.12.2. I'll con
 
 You are free to copy any example in this repo.
 
-## List of Existing Articles
+## List of Articles
+Although they consist mostly of examples, it is recommended to read through them in the given order.
 - [Font Renderer & Basic Gl Calls](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/FontRenderer%26BasicGlCalls.md)
+- [Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
+- [Stencil](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
