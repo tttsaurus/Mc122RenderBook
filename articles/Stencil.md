@@ -1,3 +1,4 @@
+## EG1
 ```java
 @SubscribeEvent
 public static void onRenderGameOverlay(RenderGameOverlayEvent event)
@@ -45,9 +46,16 @@ public static void onRenderGameOverlay(RenderGameOverlayEvent event)
     GL11.glDisable(GL11.GL_STENCIL_TEST);
 }
 ```
+![Snipaste_2025-01-18_02-15-08](https://github.com/user-attachments/assets/f486a0af-4900-4c7b-9447-0d42269f2cc6)
+
+- This is an example of masking a text to a 20x20 area
 
 ***
 
+## EG2
 ```java
 GL11.glStencilFunc(GL11.GL_NOTEQUAL, stencilValue, 0xFF);
 ```
+![Snipaste_2025-01-18_02-16-11](https://github.com/user-attachments/assets/476896e7-aec3-45ad-bd9c-fe6ae004f29f)
+
+- This is how `glStencilFunc` works so we get an anti-masked text
