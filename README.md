@@ -6,4 +6,5 @@ You are free to copy any example in this repo.
 Although they consist mostly of examples, it is recommended to read through them in the given order.
 - [Font Renderer & Basic Gl Calls](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/FontRenderer%26BasicGlCalls.md)
 - [Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
+- [Shapes & States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Shapes%26States.md)
 - [Stencil](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)

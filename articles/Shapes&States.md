@@ -186,4 +186,4 @@ tessellator.draw();
 ![Snipaste_2025-01-18_22-01-26](https://github.com/user-attachments/assets/46af479b-663a-4ba9-82ba-3585343309e6)
 
 - Square is being rendered correctly without `disableCull`
-- Because I define my square in a clockwise order
+- Because I define my square in a counterclockwise order
