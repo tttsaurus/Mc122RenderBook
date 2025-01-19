@@ -1,4 +1,6 @@
 ## EG1
+Render a white square
+
 Notice: gl state leakage is being handled implicitly.
 ```java
 GlStateManager.disableTexture2D();
@@ -24,6 +26,7 @@ GL11.glEnd();
 ***
 
 ## EG2
+An alternative way
 ```java
 GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();
@@ -51,6 +54,7 @@ tessellator.draw();
 ***
 
 ## EG3
+Without `disableTexture2D`
 ```java
 //GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();
@@ -70,6 +74,7 @@ GlStateManager.color(1, 1, 1, 1);
 ***
 
 ## EG4
+Without `enableBlend`
 ```java
 GlStateManager.disableTexture2D();
 //GlStateManager.enableBlend();
@@ -89,6 +94,7 @@ GlStateManager.color(1, 1, 1, 1);
 ***
 
 ## EG5
+Without `disableAlpha`
 ```java
 GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();
@@ -109,6 +115,7 @@ GlStateManager.color(1, 1, 1, 1);
 ***
 
 ## EG6
+Without `tryBlendFuncSeparate`
 ```java
 GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();
@@ -122,11 +129,12 @@ GlStateManager.color(1, 1, 1, 1);
 ```
 
 - Still nothing happens
-- Because we don't care how we blend things and we don't even blend
+- Because we don't care how we blend things, and we don't even blend
 
 ***
 
 ## EG7
+Without `disableCull`
 ```java
 GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();
@@ -155,6 +163,7 @@ tessellator.draw();
 ***
 
 ## EG8
+Still without `disableCull`, but it's a different story
 ```java
 GlStateManager.disableTexture2D();
 GlStateManager.enableBlend();

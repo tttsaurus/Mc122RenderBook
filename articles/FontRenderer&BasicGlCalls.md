@@ -1,4 +1,5 @@
 ## EG1
+Render a text
 ```java
 @SubscribeEvent
 public static void onRenderGameOverlay(RenderGameOverlayEvent event)
@@ -14,6 +15,7 @@ public static void onRenderGameOverlay(RenderGameOverlayEvent event)
 ***
 
 ## EG2
+Render a text with state leakage handled
 ```java
 FloatBuffer floatBuffer = ByteBuffer.allocateDirect(16 << 2).order(ByteOrder.nativeOrder()).asFloatBuffer();
 
@@ -34,6 +36,7 @@ GlStateManager.color(r, g, b, a);
 ***
 
 ## EG3
+Changing x
 ```java
 Minecraft.getMinecraft().fontRenderer.drawString("test", 10, 0, Color.RED.getRGB());
 ```
@@ -44,6 +47,7 @@ Minecraft.getMinecraft().fontRenderer.drawString("test", 10, 0, Color.RED.getRGB
 ***
 
 ## EG4
+Changing y
 ```java
 Minecraft.getMinecraft().fontRenderer.drawString("test", 0, 10, Color.RED.getRGB());
 ```
@@ -54,6 +58,7 @@ Minecraft.getMinecraft().fontRenderer.drawString("test", 0, 10, Color.RED.getRGB
 ***
 
 ## EG5
+Transformation
 ```java
 // push the transformation matrix
 GlStateManager.pushMatrix();
@@ -72,6 +77,7 @@ GlStateManager.popMatrix();
 ***
 
 ## EG6
+Transformation order
 ```java
 GlStateManager.pushMatrix();
 // notice the order of `scale` and `translate`

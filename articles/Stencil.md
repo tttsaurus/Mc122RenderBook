@@ -1,4 +1,5 @@
 ## EG1
+Create a mask
 ```java
 @SubscribeEvent
 public static void onRenderGameOverlay(RenderGameOverlayEvent event)
@@ -53,6 +54,7 @@ public static void onRenderGameOverlay(RenderGameOverlayEvent event)
 ***
 
 ## EG2
+How do we change the behavior of a mask
 ```java
 GL11.glStencilFunc(GL11.GL_NOTEQUAL, stencilValue, 0xFF);
 ```
