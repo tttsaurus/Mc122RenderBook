@@ -32,6 +32,8 @@ GlStateManager.rotate(new Quaternion(
 ```
 <br>
 
+### Intro to Quaternion
+
 Quaternion _q_ = [_w_, _u_] where _w_ ∈ ℝ and _u_ ∈ ℝ^3 which is a vector
 
 equivalently, we write
@@ -109,3 +111,16 @@ _q_ = _w_ + _a_ **_i_** + _b_ **_j_** + _c_ **_k_** where _w_, _a_, _b_, _c_ ∈
 and yeah _u_ = (_a_, _b_, _c_)^T
 
 When _u_ is our rotation axis and _θ_ is our rotation angle (in radian), we write that quaternion _q_ = [_cos θ/2_, _normalized u_ * _sin θ/2_]
+
+
+### How It Works
+
+Let's say we have a point _p_ = (x0, y0, z0)^T and define _q_ = [_cos θ/2_, _normalized u_ * _sin θ/2_]
+
+Consider _P_ = [0, _p_]
+
+Then _P'_ = [0，_p'_] = _q_ * _P_ * _q^-1_ = _q_ * _P_ * _q*_ where _p'_ is the rotated point
+
+= [_cos θ/2_, _normalized u_ * _sin θ/2_] * [0, _p_] * [_cos θ/2_, - _normalized u_ * _sin θ/2_]
+
+We can treat them as imaginary numbers and do the multiplication, or use Hamilton product.
