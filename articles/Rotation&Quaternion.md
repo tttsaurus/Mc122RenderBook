@@ -21,3 +21,12 @@ GlStateManager.popMatrix();
 ![Snipaste_2025-01-18_22-54-53](https://github.com/user-attachments/assets/d7b40cca-580b-45f2-b3c9-f8c15b3b4687)
 
 - A transformed plane is being rendered
+
+When it comes to quaternion, it's actually equivalent to do so
+```java
+GlStateManager.rotate(new Quaternion(
+                (float)Math.sin(Math.PI / 4d / 2d) / (float)Math.sqrt(2),
+                (float)Math.sin(Math.PI / 4d / 2d) / (float)Math.sqrt(2),
+                0f,
+                (float)Math.cos(Math.PI / 4d / 4d)));
+```
