@@ -75,3 +75,4 @@ public static void onRenderWorldLast(RenderWorldLastEvent event)
     restoreCommonGlStates();
 }
 ```
+![Snipaste_2025-02-02_13-58-02](https://github.com/user-attachments/assets/8bed7621-b541-4d47-9c02-afed672dd829)
