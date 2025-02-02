@@ -19,8 +19,8 @@ float[] vertices = new float[]
 
 int[] indices = new int[]
 {
-       // triangle: bottom-left, bottom-right, top
-       0, 1, 2
+      // triangle: bottom-left, bottom-right, top
+      0, 1, 2
 };
 
 vao = GL30.glGenVertexArrays();
@@ -69,3 +69,4 @@ GL30.glBindVertexArray(0);
 
 unuseShader(); // we don't care what shaders are for now
 ```
+![Snipaste_2025-02-02_14-42-38](https://github.com/user-attachments/assets/28186c70-3288-4ebd-ab18-e5959ffb28f8)
