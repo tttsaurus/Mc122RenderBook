@@ -11,6 +11,7 @@ Although they consist mostly of examples, it is recommended to read through them
 - [Stencil](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
 - [3D Shapes](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
 - [Draw Vertices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
+
 Early WIP Stage ↓
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
 - [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md)
