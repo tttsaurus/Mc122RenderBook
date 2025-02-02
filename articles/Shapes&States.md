@@ -108,9 +108,9 @@ GlStateManager.color(1, 1, 1, 1);
 ```
 
 - Still nothing happens
-- We use `alpha test` to discard pixels based on their alpha value
+- We use `alpha test` to discard pixels based on their alpha values
 - In this case, we disable `alpha test` so we don't discard anything
-- And also, this white square doesn't even have alpha value
+- And also, this white square doesn't even have alpha values
 
 ***
 
