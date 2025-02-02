@@ -49,7 +49,7 @@ tessellator.draw();
 
 - This example is totally equivalent to the first one
 - But we use the Minecraft class `Tessellator` instead
-- It's recommended to use `Tessellator` & `BufferBuilder` instead
+- It's recommended to use `Tessellator` & `BufferBuilder` instead because `glBegin...glEnd` is slow
 
 ***
 
