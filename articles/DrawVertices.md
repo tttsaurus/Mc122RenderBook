@@ -1,5 +1,5 @@
 ## EG1
-Draw a triangle using vertices and indices
+Draw a triangle using vertices and indices (requires GL30 support)
 ```java
 int prevVao = GL11.glGetInteger(GL30.GL_VERTEX_ARRAY_BINDING);
 int prevVbo = GL11.glGetInteger(GL15.GL_ARRAY_BUFFER_BINDING);
