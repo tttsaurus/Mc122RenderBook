@@ -8,6 +8,7 @@ Although they consist mostly of examples, it is recommended to read through them
 - [Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
 - [Shapes & States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Shapes%26States.md)
 - [Alpha Testing Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AlphaTestExplained.md)
+- [Blending Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BlendExplained.md)
 - [Rotation & Quaternion](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Rotation%26Quaternion.md)
 - [Stencil](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
 - [3D Shapes](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
