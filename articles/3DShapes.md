@@ -17,10 +17,11 @@ public static void onRenderWorldLast(RenderWorldLastEvent event)
     EntityPlayerSP player = Minecraft.getMinecraft().player;
     if (player == null) return;
 
-    double playerX = player.prevPosX + (player.posX - player.prevPosX) * event.getPartialTicks();
-    double playerY = player.prevPosY + (player.posY - player.prevPosY) * event.getPartialTicks();
-    double playerZ = player.prevPosZ + (player.posZ - player.prevPosZ) * event.getPartialTicks();
+    double playerX = player.lastTickPosX + (player.posX - player.lastTickPosX) * event.getPartialTicks();
+    double playerY = player.lastTickPosY + (player.posY - player.lastTickPosY) * event.getPartialTicks();
+    double playerZ = player.lastTickPosZ + (player.posZ - player.lastTickPosZ) * event.getPartialTicks();
 
+    // minus camera pos and then add target pos
     // pos: 0, 100, 0
     GlStateManager.translate(-(float)(playerX), -(float)(playerY) + 100, -(float)(playerZ));
     GlStateManager.scale(10f, 10f, 10f);
