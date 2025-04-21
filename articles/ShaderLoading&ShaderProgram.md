@@ -7,7 +7,7 @@ GL20.glShaderSource(shaderID, shaderSource);
 GL20.glCompileShader(shaderID);
 ```
 
-And this tells you the status of your shader;
+And the code below tells you the status of your shader.
 ```java
 if (GL20.glGetShaderi(shaderID, GL20.GL_COMPILE_STATUS) == GL11.GL_FALSE)
     String errorLog = GL20.glGetShaderInfoLog(shaderID, 1024);
