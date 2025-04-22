@@ -50,6 +50,13 @@ Notice:
 - you can only pass uniforms when you are using that shader program
 - unused uniforms will be deleted by gl so `glGetUniformLocation` then returns `-1`
 
+## Disposing Shaders
+You better dispose all the gl related resources at the end.
+```java
+GL20.glDetachShader(programID, shaderID);
+GL20.glDeleteShader(shaderID);
+```
+
 ## EG1
 Write the shaders we used in [Draw Vertices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 
