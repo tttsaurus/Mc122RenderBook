@@ -45,6 +45,7 @@ GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
 Don't forget to restore states if needed.
 ```java
+boolean blend = GL11.glIsEnabled(GL11.GL_BLEND);
 GL11.glGetInteger(GL14.GL_BLEND_SRC_RGB, intBuffer);
 int blendSrcRgb = intBuffer.get(0);
 GL11.glGetInteger(GL14.GL_BLEND_DST_RGB, intBuffer);
@@ -56,5 +57,9 @@ int blendDstAlpha = intBuffer.get(0);
 
 // render
 
+if (blend)
+    GlStateManager.enableBlend();
+else
+    GlStateManager.disableBlend();
 GlStateManager.tryBlendFuncSeparate(blendSrcRgb, blendDstRgb, blendSrcAlpha, blendDstAlpha);
 ```
