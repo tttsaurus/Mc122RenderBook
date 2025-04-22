@@ -14,10 +14,11 @@ finalAlpha = (sourceAlpha * sourceAlphaFactor) + (destAlpha * destAlphaFactor)
 ```
 - `sourceAlpha` is the alpha component of the source color
 - `destAlpha` is the alpha component of the destination color
-- `sourceAlphaFactor` and `destAlphaFactor`: similar factors as `sourceColorFactor` and `destColorFactor`, but we usually use `GL_ONE` or `GL_ZERO` here
+- `sourceAlphaFactor` and `destAlphaFactor`: similar to factors like `sourceColorFactor` and `destColorFactor`, but we usually use `GL_ONE` or `GL_ZERO` here
 
 You can do
 ```java
+// usually tweaking sourceColorFactor and destColorFactor is enough
 GlStateManager.blendFunc(sourceColorFactor, destColorFactor);
 ```
 which is basically playing with `sourceColorFactor` and `destColorFactor`.
