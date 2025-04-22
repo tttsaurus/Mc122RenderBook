@@ -12,7 +12,7 @@ Although they consist mostly of examples, it is recommended to read through them
 - [Rotation & Quaternion](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Rotation%26Quaternion.md)
 - [Stencil Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
 - [An Example of a 3D Object](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
-- [Draw a Triangle with Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
+- [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
 
 Early WIP Stage ↓
