@@ -5,14 +5,14 @@ You are free to copy any example in this repo.
 ## List of Articles
 Although they consist mostly of examples, it is recommended to read through them in the given order.
 - [Font Renderer & Basic Gl Calls](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/FontRenderer%26BasicGlCalls.md)
-- [Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
-- [Shapes & States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Shapes%26States.md)
+- [Common Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
+- [Shape & State Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Shapes%26States.md)
 - [Alpha Testing Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AlphaTestExplained.md)
 - [Blending Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BlendExplained.md)
 - [Rotation & Quaternion](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Rotation%26Quaternion.md)
-- [Stencil](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
-- [3D Shapes](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
-- [Draw Vertices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
+- [Stencil Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
+- [An Example of a 3D Object](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
+- [Draw a Triangle with Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
 
 Early WIP Stage ↓
