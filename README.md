@@ -11,9 +11,12 @@ Although they consist mostly of examples, it is recommended to read through them
 - [Blending Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BlendExplained.md)
 - [Rotation & Quaternion](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Rotation%26Quaternion.md)
 - [Stencil Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
+- [Stencil Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/StencilExplained.md) WIP
 - [An Example of a 3D Object](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
 - [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
 - [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md) WIP
+- [Intro To GLSL](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/IntroToGLSL.md) WIP
+- [Clip Space, View Space, etc](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AllThatAboutViewClipEtc.md) WIP
 - [Parsing Obj Model](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ParsingObjModel.md) WIP
 - [Framebuffer](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Framebuffer.md) WIP
