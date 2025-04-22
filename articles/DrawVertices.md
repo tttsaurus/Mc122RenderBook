@@ -71,6 +71,9 @@ unuseShader(); // we don't care what shaders are for now
 ```
 ![Snipaste_2025-02-02_14-42-38](https://github.com/user-attachments/assets/28186c70-3288-4ebd-ab18-e5959ffb28f8)
 
+In this case, we use 8 floats per vertex: `postion` (`layout (location = 0)`), `texcoord` (`layout (location = 1)`), and `normal` (`layout (location = 2)`).
+While this might seem redundant, it's actually quite useful for handling complex models. Of course, you're free to define your own format but just make sure your shaders follow the same format.
+
 ## EG2
 Draw two triangles using instancing
 ```java
