@@ -21,7 +21,7 @@ If you are wondering what are vertex and fragment shaders, take a look at the pi
 > source: https://www.researchgate.net/figure/The-graphics-pipeline-in-OpenGL-consists-of-these-5-steps-in-the-new-generation-of-cards_fig1_235696712
 
 ## Shader Program
-Don't forget to attack both vertex and fragment shader id.
+Don't forget to attach both vertex and fragment shader id.
 ```java
 int programID = GL20.glCreateProgram();
 GL20.glAttachShader(programID, shaderID);
@@ -42,7 +42,7 @@ Let's say you have a line of code `uniform bool flag;` in you shader.
 Then, you'll need to do the following.
 ```java
 int loc = GL20.glGetUniformLocation(programID, "flag");
-GL20.glUniform1i(0 or 1); // which is true or false
+GL20.glUniform1i(1 or 0); // which is true or false
 ```
 After that, the `flag` in your shader is set to `true` or `false`.
 
@@ -55,6 +55,7 @@ You better dispose all the gl related resources at the end.
 ```java
 GL20.glDetachShader(programID, shaderID);
 GL20.glDeleteShader(shaderID);
+GL20.glDeleteProgram(programID);
 ```
 
 ## EG1

@@ -170,3 +170,5 @@ GL30.glBindVertexArray(0);
 unuseShader(); // we don't care what shaders are for now
 ```
 ![Snipaste_2025-02-21_18-52-07](https://github.com/user-attachments/assets/534919a6-0a3a-4ddc-b6af-314871758864)
+
+Instance offset (`layout (location = 3)`) is being handled explicitly in vertex shader. By the way, we use instancing to reduce draw calls as `glDrawElementsInstanced` is the only draw call.
