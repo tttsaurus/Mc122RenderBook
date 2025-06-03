@@ -48,10 +48,10 @@ After that, the `flag` in your shader is set to `true` or `false`.
 
 Notice: 
 - you can only pass uniforms when you are using that shader program
-- unused uniforms will be deleted by gl so `glGetUniformLocation` then returns `-1`
+- unused uniforms will be deleted by GL so `glGetUniformLocation` at compiling stage then returns `-1`
 
 ## Disposing Shaders
-You better dispose all the gl related resources at the end.
+You better dispose all the GL related resources at the end.
 ```java
 GL20.glDetachShader(programID, shaderID);
 GL20.glDeleteShader(shaderID);
@@ -59,7 +59,7 @@ GL20.glDeleteProgram(programID);
 ```
 
 ## EG1
-Write the shaders we used in [Draw Vertices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
+Write the shaders we used in [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 
 Vertex shader
 ```glsl
@@ -101,7 +101,7 @@ void main()
 
 - Vertices like `-0.5f, -0.5f, 0.0f` are small numbers, but why the triangle is huge?
   <br><br>
-  Another quick clarification, these vertices are in NDC (normalized device coordinate)
+  Another quick clarification, those vertices are in NDC (normalized device coordinate)
 
   | Space  | Range | What it Means                      |
   |:--------|:-------|:----------------------------------|
