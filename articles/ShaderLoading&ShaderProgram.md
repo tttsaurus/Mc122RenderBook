@@ -95,7 +95,7 @@ void main()
 
 ![Snipaste_2025-02-02_14-42-38](https://github.com/user-attachments/assets/28186c70-3288-4ebd-ab18-e5959ffb28f8)
 
-- As we can see, the geometry is totally defined by `gl_Position`. But why it's a `vec4`?
+- As we can see, the geometry is totally defined by `gl_Position`. But why is it a `vec4`?
   <br><br>
   Just a quick clarification, `gl_Position` is in clip space, and it's a 4D homogenous coordinate.
 
