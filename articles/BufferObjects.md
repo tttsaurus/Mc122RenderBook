@@ -101,6 +101,9 @@ Usage hints:
 To allocate and upload data in one call:
 
 ```java
+GL15.glBufferData(target, byteBuffer, usageHint);
+
+// example
 ByteBuffer byteBuffer = ByteBuffer
     .allocateDirect(arr.length * Integer.BYTES)
     .order(ByteOrder.nativeOrder()); // critical for correct layout
