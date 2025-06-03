@@ -22,7 +22,7 @@ When alpha testing is enabled, for each fragment (pixel):
 - The pixel’s alpha value is compared with `alphaRef` using `alphaFunc`
 - If it fails the test, the pixel is discarded. That is, not writing it to color buffer, no depth test, and no blend.
 
-So, when you want to blend things, you could do
+So, when you don't want to blend things and want a hard cutoff, you could do
 ```java
 GlStateManager.enableAlpha();
 GlStateManager.alphaFunc(GL11.GL_GREATER, 0.0f);
