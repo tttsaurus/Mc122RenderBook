@@ -17,6 +17,7 @@ Although they consist mostly of examples, it is recommended to read through them
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
 - [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md)
 - [Common Buffer Objects](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BufferObjects.md)
+- [NIO ByteBuffer Tips](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/NioByteBuffer.md)
 - [Intro To GLSL](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/IntroToGLSL.md) WIP
 - [Clip Space, View Space, etc](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AllThatAboutViewClipEtc.md) WIP
 - [Parsing Obj Model](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ParsingObjModel.md) WIP
