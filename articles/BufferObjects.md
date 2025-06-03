@@ -38,7 +38,7 @@ Before operating on the buffer, bind it to a specific target (e.g., vertex data,
 ```java
 GL15.glBindBuffer(targetConstant, id);
 
-// example: bind a Pixel Unpack Buffer
+// example: bind a PBO
 GL15.glBindBuffer(GL21.GL_PIXEL_UNPACK_BUFFER, id);
 ```
 
