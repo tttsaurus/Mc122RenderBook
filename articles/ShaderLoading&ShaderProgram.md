@@ -38,7 +38,7 @@ GL20.glUseProgram(programID);
 GL20.glUseProgram(0);
 ```
 What are uniforms?
-Let's say you have a line of code `uniform bool flag;` in you shader.
+Let's say you have a line of code `uniform bool flag;` in your shader.
 Then, you'll need to do the following.
 ```java
 int loc = GL20.glGetUniformLocation(programID, "flag");

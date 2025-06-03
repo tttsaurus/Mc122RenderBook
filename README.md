@@ -15,7 +15,7 @@ Although they consist mostly of examples, it is recommended to read through them
 - [An Example of a 3D Object](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
 - [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
 - [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
-- [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md) WIP
+- [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md)
 - [Intro To GLSL](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/IntroToGLSL.md) WIP
 - [Clip Space, View Space, etc](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AllThatAboutViewClipEtc.md) WIP
 - [Parsing Obj Model](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ParsingObjModel.md) WIP
