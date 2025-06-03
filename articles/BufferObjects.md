@@ -9,7 +9,7 @@ There are many kinds of OpenGL buffer objects. Here's an intro.
 | **Shader Storage Buffer (SSBO)** | `GL_SHADER_STORAGE_BUFFER` | General-purpose large data buffers accessible in shaders (read & write) | GPGPU tasks, particle systems, deferred rendering | Can hold large structured data; needs `layout(std430)` in shaders |
 
 ## Typical Pairing
-- VBO + EBO (+ VAO) → Core rendering pipeline (geometry and indices).
+- VBO + EBO (+ VAO) → Core rendering pipeline (vertices and indices).
 - PBOs → Efficient texture or framebuffer data transfer.
 - SSBO → General GPU compute tasks and advanced rendering workflows.
 
