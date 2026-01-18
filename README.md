@@ -1,25 +1,52 @@
-A collection of rendering examples and experiments in Minecraft 1.12.2. I'll continue to expand this repository as I explore and learn more about the rendering.
+This repo aims to serve as a tutorial of Minecraft 1.12.2 rendering, _**but**_
+you can also expect general OpenGL, LWJGL, Java ideas to be explained.
 
-You are free to copy any example in this repo.
+> **Note**: You are free to copy any examples from this repo.
 
-## List of Articles
-Although they consist mostly of examples, it is recommended to read through them in the given order.
-- [Font Renderer & Basic Gl Calls](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/FontRenderer%26BasicGlCalls.md)
-- [Common Gl States](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/GlStates.md)
-- [Shape & State Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Shapes%26States.md)
-- [Alpha Testing Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AlphaTestExplained.md)
-- [Blending Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BlendExplained.md)
-- [Rotation & Quaternion](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Rotation%26Quaternion.md)
-- [Stencil Experiments](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Stencil.md)
-- [Stencil Explained](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/StencilExplained.md) WIP
-- [An Example of a 3D Object](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/3DShapes.md)
-- [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md)
-- [VAO & Vertex Attribute Pointer](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/VaoAndVertexAttributePointer.md)
-- [Shader Loading & Shader Program](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ShaderLoading%26ShaderProgram.md)
-- [Fixed-Function -> Programmable Pipeline](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ProgrammablePipeline.md)
-- [Common Buffer Objects](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/BufferObjects.md)
-- [NIO ByteBuffer Tips](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/NioByteBuffer.md)
-- [Intro To GLSL](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/IntroToGLSL.md) WIP
-- [Clip Space, View Space, etc](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/AllThatAboutViewClipEtc.md) WIP
-- [Parsing Obj Model](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/ParsingObjModel.md) WIP
-- [Framebuffer](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/Framebuffer.md) WIP
+## GL Execution Model
+1. [Command Data Flow](articles/gl_basics/command_data_flow.md)
+2. [Command Order](articles/gl_basics/order.md)
+3. [Common Synchronizations](articles/gl_basics/synchronization.md)
+
+[//]: # ()
+[//]: # (## List of Articles)
+
+[//]: # (Although they consist mostly of examples, it is recommended to read through them in the given order.)
+
+[//]: # (- [Font Renderer & Basic Gl Calls]&#40;articles/FontRenderer&BasicGlCalls.md&#41;)
+
+[//]: # (- [Common Gl States]&#40;articles/GlStates.md&#41;)
+
+[//]: # (- [Shape & State Experiments]&#40;articles/Shapes&States.md&#41;)
+
+[//]: # (- [Alpha Testing Explained]&#40;articles/AlphaTestExplained.md&#41;)
+
+[//]: # (- [Blending Explained]&#40;articles/BlendExplained.md&#41;)
+
+[//]: # (- [Rotation & Quaternion]&#40;articles/Rotation&Quaternion.md&#41;)
+
+[//]: # (- [Stencil Experiments]&#40;articles/Stencil.md&#41;)
+
+[//]: # (- [Stencil Explained]&#40;articles/StencilExplained.md&#41; WIP)
+
+[//]: # (- [An Example of a 3D Object]&#40;articles/3DShapes.md&#41;)
+
+[//]: # (- [Draw Triangles Using Vertices and Indices]&#40;articles/DrawVertices.md&#41;)
+
+[//]: # (- [VAO & Vertex Attribute Pointer]&#40;articles/VaoAndVertexAttributePointer.md&#41;)
+
+[//]: # (- [Shader Loading & Shader Program]&#40;articles/ShaderLoading&ShaderProgram.md&#41;)
+
+[//]: # (- [Fixed-Function -> Programmable Pipeline]&#40;articles/ProgrammablePipeline.md&#41;)
+
+[//]: # (- [Common Buffer Objects]&#40;articles/BufferObjects.md&#41;)
+
+[//]: # (- [NIO ByteBuffer Tips]&#40;articles/NioByteBuffer.md&#41;)
+
+[//]: # (- [Intro To GLSL]&#40;articles/IntroToGLSL.md&#41; WIP)
+
+[//]: # (- [Clip Space, View Space, etc]&#40;articles/AllThatAboutViewClipEtc.md&#41; WIP)
+
+[//]: # (- [Parsing Obj Model]&#40;articles/ParsingObjModel.md&#41; WIP)
+
+[//]: # (- [Framebuffer]&#40;articles/Framebuffer.md&#41; WIP)
