@@ -1,4 +1,4 @@
-## 1. `glMemoryBarrier` — GPU-to-GPU Visibility
+## 1. `glMemoryBarrier`
 It ensures memory writes performed by earlier GPU commands become visible to later GPU commands.
 
 e.g.
@@ -24,8 +24,8 @@ so future GPU commands _must_ see your memory writes.
 - Guarantee completion
 
 You don't need barrier for:
-- CPU-to-GPU writes (like `glBufferSubData`)
-- GPU-to-CPU reads (use fences instead)
+- CPU2GPU writes (like `glBufferSubData`)
+- GPU2CPU reads (use fences instead)
 
 ## 2. `glFenceSync`
 
@@ -43,7 +43,7 @@ A fence doesn't:
 
 A fence is only about the completion but not visibility.
 
-## 3. `glClientWaitSync` — CPU Waiting for GPU
+## 3. `glClientWaitSync`
 It allows the CPU to wait until the GPU reaches a fence.
 
 e.g.
@@ -66,6 +66,7 @@ glDispatchCompute();
 fence = glFenceSync(...);
 
 glClientWaitSync(fence, GL_SYNC_FLUSH_COMMANDS_BIT, timeout);
+// you might need a barrier here; depends on the context
 glGetBufferSubData(...); // now safe; read result
 ```
 
@@ -96,3 +97,23 @@ Because drivers are written carefully to provide fallback solutions, which may c
 > **Note**:<br>
 > GL synchronization is multi-dimensional.
 > No single command covers all correctness requirements.
+
+***
+
+## Examples
+
+**Context**:
+- Compute shader writes to an image
+- CPU reads the image afterward
+
+```java
+GL43.glDispatchCompute(1, 1, 1);
+GL42.glMemoryBarrier(GL42.GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
+
+long fence = GL32C.glFenceSync(GL32C.GL_SYNC_GPU_COMMANDS_COMPLETE, 0);
+int waitReturn = GL32C.glClientWaitSync(fence, GL32.GL_SYNC_FLUSH_COMMANDS_BIT, 1_000_000L);
+           
+// get image
+// notice: get image will stall the pipeline, which makes wait sync unnecessary here,
+//         but it's still better to not rely on implicit side effects
+```

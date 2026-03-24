@@ -1,7 +1,12 @@
 This repo aims to serve as a tutorial of Minecraft 1.12.2 rendering, _**but**_
 you can also expect general OpenGL, LWJGL, Java ideas to be explained.
 
-> **Note**: You are free to copy any examples from this repo.
+> **Note**: You are free to copy any examples from this repo, but follow MIT license still.
+
+## Unit Test
+It's recommended to set up a OpenGL test environment first so you'll be able to verify
+a kinds of ideas, edge cases, etc.
+[JUnit OpenGL Extension](articles/unit_test/junit_gl_extension.md)
 
 ## GL Execution Model
 1. [Command Data Flow](articles/gl_basics/command_data_flow.md)
