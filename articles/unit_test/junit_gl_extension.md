@@ -1,6 +1,6 @@
 ## `GLTestExtension`
 This is an extension class for JUnit to enable OpenGL unit tests.
-The implementation is from an all-right-reserved project but this class is authored by me (tttsaurus),
+The implementation is from an all-right-reserved project but this class is authored by me (tttsaurus);
 I thereby grant the free usage of this class.
 
 > **Note:**<br>

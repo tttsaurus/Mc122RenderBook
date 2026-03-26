@@ -8,10 +8,22 @@ It's recommended to set up an OpenGL test environment first so you'll be able to
 any kinds of ideas, edge cases, etc.<br>
 [JUnit OpenGL Extension](articles/unit_test/junit_gl_extension.md)
 
+## Nsight Graphics
+Minecraft 1.12.2 runs on compat profile and Nsight works with compat profile. You'll be able to 
+use RenderDoc only if an emulation (emulate fixed-func pipeline with modern programmable pipeline) layer is done,
+but still... emulation emulates.<br>
+- [Example: Nsight CLI + Gradle Task Integration](https://github.com/CleanroomMC/Cleanroom/blob/fdcfb19fc2fcb8d98e2738654f3d9f8d047c76c4/projects/cleanroom/build.gradle#L885-L928)
+- [Nsight CLI Details](https://docs.nvidia.com/nsight-graphics/UserGuide/launch-application-overview.html#cli-arguments-details)
+
 ## GL Execution Model
 1. [Command Data Flow](articles/gl_basics/command_data_flow.md)
 2. [Command Order](articles/gl_basics/order.md)
 3. [Common Synchronizations](articles/gl_basics/synchronization.md)
+
+> **Key point:**
+> Now you've understood that OpenGL isn't merely about the correct command combinations;
+> "Nothing" is necessarily guaranteed by CPU side method calls, and things work not necessarily
+> because you've done the correct thing.
 
 [//]: # ()
 [//]: # (## List of Articles)
