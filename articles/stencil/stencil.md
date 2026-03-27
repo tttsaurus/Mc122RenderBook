@@ -79,7 +79,7 @@ GL11.glStencilFunc(GL11.GL_NOTEQUAL, stencilValue, 0xFF);
 
 ## EG3
 
-Here's an example of creating stencil system that supports nested masks.
+Here's an example of creating a stencil system that supports nested masks.
 
 ```java
 public final class RenderMask
