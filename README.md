@@ -25,16 +25,15 @@ but still... emulation emulates.<br>
 > "Nothing" is necessarily guaranteed by CPU side method calls, and things work not necessarily
 > because you've done the correct thing.
 
-[//]: # ()
-[//]: # (## List of Articles)
+## Intro To GL States
+- [Font Renderer & Basic GL Calls](articles/state/fontrenderer_basic_gl_calls.md)
+- [Common GL States](articles/state/gl_states.md)
+- [Shape & State Experiments](articles/state/shapes_n_states.md)
 
-[//]: # (Although they consist mostly of examples, it is recommended to read through them in the given order.)
+**GL States Related Concerns:**
+- [Concerns](articles/state/concerns.md)
 
-[//]: # (- [Font Renderer & Basic Gl Calls]&#40;articles/FontRenderer&BasicGlCalls.md&#41;)
 
-[//]: # (- [Common Gl States]&#40;articles/GlStates.md&#41;)
-
-[//]: # (- [Shape & State Experiments]&#40;articles/Shapes&States.md&#41;)
 
 [//]: # (- [Alpha Testing Explained]&#40;articles/AlphaTestExplained.md&#41;)
 

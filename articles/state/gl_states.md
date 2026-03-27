@@ -25,8 +25,8 @@ else
     GlStateManager.disableTexture2D();
 ```
 
-I use `GlStateManager` instead of direct gl calls because Minecraft may need to track state changes. 
-`GlStateManager` is a wrapper class in Minecraft for gl calls.
+Use `GlStateManager` instead of direct GL calls because Minecraft may need to track state changes. 
+`GlStateManager` is a wrapper class in Minecraft for GL calls.
 
 Here are some examples you might find useful.
 ```java
