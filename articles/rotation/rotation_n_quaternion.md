@@ -1,7 +1,7 @@
-## EG1
-Rotate a plane
+## Rotate a plane
 
-Notice: all gl states are being handled implicitly.
+> **Notice**: all GL states are being handled implicitly.
+
 ```java
 int x = 10, y = 10, width = 20, height = 20;
 
@@ -18,7 +18,7 @@ GlStateManager.rotate(45f, 1, 1, 0);
 tessellator.draw();
 GlStateManager.popMatrix();
 ```
-![Snipaste_2025-01-18_22-54-53](https://github.com/user-attachments/assets/d7b40cca-580b-45f2-b3c9-f8c15b3b4687)
+![Snipaste_2025-01-18_22-54-53](img/404630805-d7b40cca-580b-45f2-b3c9-f8c15b3b4687.png)
 
 - A transformed plane is being rendered
 

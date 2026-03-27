@@ -33,13 +33,17 @@ but still... emulation emulates.<br>
 **GL States Related Concerns:**
 - [Concerns](articles/state/concerns.md)
 
+## Rotation
+- [Rotation & Quaternion](articles/rotation/rotation_n_quaternion.md)
+
+## Alpha & Blending
+- [Alpha Testing Explained](articles/alpha_blend/alpha_test.md)
+- [Blending Explained](articles/alpha_blend/blend.md)
+
+## NIO ByteBuffer
+- [NIO ByteBuffer Tips](articles/bytebuffer/nio_bytebuffer.md)
 
 
-[//]: # (- [Alpha Testing Explained]&#40;articles/AlphaTestExplained.md&#41;)
-
-[//]: # (- [Blending Explained]&#40;articles/BlendExplained.md&#41;)
-
-[//]: # (- [Rotation & Quaternion]&#40;articles/Rotation&Quaternion.md&#41;)
 
 [//]: # (- [Stencil Experiments]&#40;articles/Stencil.md&#41;)
 
@@ -56,8 +60,6 @@ but still... emulation emulates.<br>
 [//]: # (- [Fixed-Function -> Programmable Pipeline]&#40;articles/ProgrammablePipeline.md&#41;)
 
 [//]: # (- [Common Buffer Objects]&#40;articles/BufferObjects.md&#41;)
-
-[//]: # (- [NIO ByteBuffer Tips]&#40;articles/NioByteBuffer.md&#41;)
 
 [//]: # (- [Intro To GLSL]&#40;articles/IntroToGLSL.md&#41; WIP)
 

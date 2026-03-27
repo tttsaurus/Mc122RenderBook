@@ -19,13 +19,19 @@ finalAlpha = (sourceAlpha * sourceAlphaFactor) + (destAlpha * destAlphaFactor)
 You can do
 ```java
 // usually tweaking sourceColorFactor and destColorFactor is enough
-GlStateManager.blendFunc(sourceColorFactor, destColorFactor);
+GlStateManager.blendFunc(
+        sourceColorFactor, 
+        destColorFactor);
 ```
 which is basically playing with `sourceColorFactor` and `destColorFactor`.
 
-Use the code below if you also want to set `sourceAlphaFactor` and `destAlphaFactor`.
+Use the code below if you want to set `sourceAlphaFactor` and `destAlphaFactor` altogether.
 ```java
-GlStateManager.tryBlendFuncSeparate(sourceColorFactor, destColorFactor, sourceAlphaFactor, destAlphaFactor);
+GlStateManager.tryBlendFuncSeparate(
+        sourceColorFactor, 
+        destColorFactor, 
+        sourceAlphaFactor, 
+        destAlphaFactor);
 ```
 
 Here are some common values you’ll use for `sourceFactor` and `destFactor`:
@@ -39,12 +45,12 @@ Here are some common values you’ll use for `sourceFactor` and `destFactor`:
 | `GL_DST_ALPHA`           | Destination alpha value               |
 | `GL_ONE_MINUS_DST_ALPHA` | `1.0 -` Destination alpha value       |
 
-Here's a common example:
+Here's a common blending example:
 ```java
 GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 ```
 
-Don't forget to restore states if needed.
+Don't forget to restore states if needed, but be aware of the trade-offs.
 ```java
 boolean blend = GL11.glIsEnabled(GL11.GL_BLEND);
 GL11.glGetInteger(GL14.GL_BLEND_SRC_RGB, intBuffer);

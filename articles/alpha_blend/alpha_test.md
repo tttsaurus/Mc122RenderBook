@@ -3,18 +3,18 @@ In the fixed-function pipeline, we use alpha testing to discard pixels.
 GlStateManager.alphaFunc(alphaFunc, alphaRef);
 ```
 
-Here are some `alphaFunc`.
+Here are `alphaFunc`s.
 
-| Constant     | Meaning                        |
-|:-------------|:--------------------------------|
-| `GL_NEVER`   | Never passes                    |
-| `GL_LESS`    | Passes if `alpha < alphaRef`    |
-| `GL_EQUAL`   | Passes if `alpha == alphaRef`   |
-| `GL_LEQUAL`  | Passes if `alpha <= alphaRef`   |
-| `GL_GREATER` | Passes if `alpha > alphaRef`    |
-| `GL_NOTEQUAL`| Passes if `alpha != alphaRef`   |
-| `GL_GEQUAL`  | Passes if `alpha >= alphaRef`   |
-| `GL_ALWAYS`  | Always passes                   |
+| Constant      | Meaning                       |
+|:--------------|:------------------------------|
+| `GL_NEVER`    | Never passes                  |
+| `GL_LESS`     | Passes if `alpha < alphaRef`  |
+| `GL_EQUAL`    | Passes if `alpha == alphaRef` |
+| `GL_LEQUAL`   | Passes if `alpha <= alphaRef` |
+| `GL_GREATER`  | Passes if `alpha > alphaRef`  |
+| `GL_NOTEQUAL` | Passes if `alpha != alphaRef` |
+| `GL_GEQUAL`   | Passes if `alpha >= alphaRef` |
+| `GL_ALWAYS`   | Always passes                 |
 
 And of course `alphaRef` is between `0.0` and `1.0`.
 
@@ -28,7 +28,7 @@ GlStateManager.enableAlpha();
 GlStateManager.alphaFunc(GL11.GL_GREATER, 0.0f);
 ```
 
-Don't forget to restore states if needed.
+Don't forget to restore states if needed, but be aware of the trade-offs.
 ```java
 boolean alphaTest = GL11.glIsEnabled(GL11.GL_ALPHA_TEST);
 GL11.glGetInteger(GL11.GL_ALPHA_TEST_FUNC, intBuffer);
