@@ -43,11 +43,10 @@ but still... emulation emulates.<br>
 ## NIO ByteBuffer
 - [NIO ByteBuffer Tips](articles/bytebuffer/nio_bytebuffer.md)
 
+## Stencil
+- [Stencil Experiments](articles/stencil/stencil.md)
 
 
-[//]: # (- [Stencil Experiments]&#40;articles/Stencil.md&#41;)
-
-[//]: # (- [Stencil Explained]&#40;articles/StencilExplained.md&#41; WIP)
 
 [//]: # (- [An Example of a 3D Object]&#40;articles/3DShapes.md&#41;)
 
