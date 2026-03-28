@@ -1,5 +1,5 @@
-This repo aims to serve as a tutorial of Minecraft 1.12.2 rendering, _**but**_
-you can also expect general OpenGL, LWJGL, Java ideas to be explained.
+This repo aims to serve as a tutorial for Minecraft 1.12.2 rendering, _**but**_
+you can also expect general OpenGL, LWJGL, engine design ideas to be explained.
 
 > **Note**: You are free to copy any examples from this repo, but follow MIT license still.
 
@@ -43,6 +43,7 @@ We all care more about the structural wise modularity and scalability.
 - [Shader Loading & Shader Program](articles/prog_pipe/shaders.md)
 - [VAO & Vertex Format](articles/prog_pipe/vao_n_vertex_format.md)
 - [Common Buffer Objects](articles/prog_pipe/buffer_objects.md)
+- [Typical Shader Setup](articles/prog_pipe/typical_shader_setup.md)
 
 ## NIO ByteBuffer
 - [NIO ByteBuffer Tips](articles/bytebuffer/nio_bytebuffer.md)

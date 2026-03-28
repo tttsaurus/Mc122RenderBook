@@ -60,7 +60,7 @@ After that, the `flag` in your shader is set to `true` or `false`.
 
 > **Notice**: 
 > - You can only pass uniforms when you are using that shader program
-> - Unused uniforms will be deleted by GL so `glGetUniformLocation` at compiling stage therefore most likely returns `-1` (depends on driver)
+> - Unused uniforms will most likely be deleted by GL so `glGetUniformLocation` will return `-1` (depends on driver)
 
 ## Disposing Shaders
 You better dispose all the GL related resources at the end.
