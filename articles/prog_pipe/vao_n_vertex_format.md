@@ -4,7 +4,7 @@
 - You can link multiple VBOs to a VAO using different attribute indices.
 - However, **only one EBO** can be bound to a VAO at a time. The VAO remembers the EBO bound at the moment of setup.
 
-## Lifecycle Setup
+## Setup
 
 Below is a typical setup phase for a VAO with multiple VBOs and a single EBO:
 
@@ -31,16 +31,26 @@ GL15.glBindBuffer(GL15.GL_ELEMENT_ARRAY_BUFFER, eboID);
 
 // VAO setup is done
 // unbind if necessary
-GL30.glBindVertexArray(0);
+GL30.glBindVertexArray(0); // bind to 0 or the prev binding depends on your need
 GL15.glBindBuffer(GL15.GL_ARRAY_BUFFER, 0);
 GL15.glBindBuffer(GL15.GL_ELEMENT_ARRAY_BUFFER, 0);
 ```
 
 ## Draw Phase
-To draw with the previously configured VAO and EBO, you must re-bind both:
+To draw with the previously configured VAO and everything, all you need to do is re-bind the VAO:
 ```java
 GL30.glBindVertexArray(vaoID);
-GL15.glBindBuffer(GL15.GL_ELEMENT_ARRAY_BUFFER, eboID);
-
-GL11.glDrawElements(...); // or any DrawElements variant
+GL11.glDrawElements(...); // or any other variant draw calls
 ```
+
+> **Notice:**
+> - `DrawArrays` series draw calls don't require an EBO to guide the drawing process.
+> - `DrawElements` series draw calls do require an EBO for drawing.
+> - It's preferred to use `DrawElements` when vertex reuse is necessarily, which is most of the scenarios.
+
+For `GL11.glDrawElements(GL11.GL_TRIANGLES, count, GL11.GL_UNSIGNED_INT, offset)`
+- `GL_TRIANGLES` represents the primitive type
+- `count` represents the number of indices
+- `GL11.GL_UNSIGNED_INT` represents how GPU interprets the EBO
+  (e.g. every index is a 32-bit unsigned integer; you could use short or byte too)
+- `offset` represents the reading offset of the EBO in bytes

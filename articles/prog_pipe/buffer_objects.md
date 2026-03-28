@@ -1,23 +1,32 @@
 There are many kinds of OpenGL buffer objects. Here's an intro.
 
-| **Buffer**                       | **GL Constant**            | **Main Purpose**                                                        | **Key Use Cases**                                 | **Special Features**                                              |
-| -------------------------------- | -------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
-| **Vertex Buffer Object (VBO)**   | `GL_ARRAY_BUFFER`          | Stores vertex data: positions, UVs, normals, colors, etc.               | Used in rendering geometry                        | Used with `glVertexAttribPointer()` to feed shader inputs         |
-| **Element Buffer Object (EBO)**  | `GL_ELEMENT_ARRAY_BUFFER`  | Stores vertex indices for indexed drawing (`glDrawElements`)            | Efficient rendering with shared vertices          | Bound to VAO; avoids redundant vertices                           |
-| **Pixel Pack Buffer (PBO)**      | `GL_PIXEL_PACK_BUFFER`     | Reads pixel data from GPU (e.g. `glReadPixels`)                         | Async readback, screenshots, GPGPU read results   | CPU doesn't stall waiting for GPU to finish                       |
-| **Pixel Unpack Buffer (PBO)**    | `GL_PIXEL_UNPACK_BUFFER`   | Uploads texture/image data to GPU (e.g. `glTexImage2D`)                 | Streaming textures, async uploads                 | Can be used with streaming video or live texture updates          |
-| **Shader Storage Buffer (SSBO)** | `GL_SHADER_STORAGE_BUFFER` | General-purpose large data buffers accessible in shaders (read & write) | GPGPU tasks, particle systems, deferred rendering | Can hold large structured data; needs `layout(std430)` in shaders |
+| **Buffer**                       | **GL Constant**            | 
+|----------------------------------|----------------------------|
+| **Vertex Buffer Object (VBO)**   | `GL_ARRAY_BUFFER`          | 
+| **Element Buffer Object (EBO)**  | `GL_ELEMENT_ARRAY_BUFFER`  | 
+| **Pixel Pack Buffer (PBO)**      | `GL_PIXEL_PACK_BUFFER`     | 
+| **Pixel Unpack Buffer (PBO)**    | `GL_PIXEL_UNPACK_BUFFER`   | 
+| **Shader Storage Buffer (SSBO)** | `GL_SHADER_STORAGE_BUFFER` | 
 
 ## Typical Pairing
-- VBO + EBO (+ VAO) → Core rendering pipeline (vertices and indices).
-- PBOs → Efficient texture or framebuffer data transfer.
-- SSBO → General GPU compute tasks and advanced rendering workflows.
+- VBO + EBO + VAO → Core rendering pipeline (vertices and indices)
+- PBOs → Efficient texture or framebuffer data transfer
+- SSBO → General GPU compute tasks and advanced rendering workflows
 
-By reading through [Draw Triangles Using Vertices and Indices](https://github.com/tttsaurus/Mc122RenderBook/blob/main/articles/DrawVertices.md), you should already be pretty familiar with VAO + VBO + EBO.
+By reading through [Drawing Tris Using Vertices and Indices Via The Modern Pipeline](draw_vertices.md), 
+you should already be pretty familiar with a typical VAO setup.
 
 ## Common Usage Patterns
 
 OpenGL buffer objects are generic containers that store data in GPU memory. Their usage generally follows this lifecycle:
+
+> **Notice**:<br>
+> Buffers do not have an intrinsic or fixed type in GL.
+> A buffer object is merely interpreted according to the binding
+> target it is associated with after a `bind` call.
+> However, buffers still don't gain a fixed type after `bind` but you should respect
+> its first binding target type in most cases.
+> You're still free to interpret a buffer in different types.
 
 ---
 
