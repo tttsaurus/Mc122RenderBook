@@ -48,8 +48,6 @@ We all care more about the structural wise modularity and scalability.
 ## NIO ByteBuffer
 - [NIO ByteBuffer Tips](articles/bytebuffer/nio_bytebuffer.md)
 
-// todo: allocate direct vs lwjgl allocate
-
 ## GL States Related Concerns
 Here are some major [Concerns](articles/state/concerns.md)
 
@@ -65,8 +63,15 @@ Here are some major [Concerns](articles/state/concerns.md)
 
 ## Intro To RAW/WAR Hazards
 > They are read-after-write and write-after-read hazards
+- [Common Hazards](articles/hazard/raw_war.md)
 
-// todo: introduce "special" commands and RAW/WAR conditions
+***
+
+> You are now expected to be _OK_ with shaders, draw calls, execution model, etc.
+> It's recommended to design and implement your own pipeline that streamlines _something_ with
+> the techniques you learned.
+
+***
 
 ## Unit Test
 It's recommended to set up an OpenGL test environment first so you'll be able to verify
